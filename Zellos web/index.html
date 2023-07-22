@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style/style.css" />
+<title>Zellos</title>
+<link rel="icon" href="image/zeloswarna.png" type="image/x-icon">
+</head>
+<body>
+<header>
+  <a href="" class="logo">
+    <img src="image/zelloslogo.png" alt="" width="400" >
+  </a>	
+  <nav>
+    <a href="index.html" class="active">home</a>
+    <a href="menu.html">Categories</a>
+    <a href="aboutus.html">about us</a>
+    <a href="Review.html">Review</a>
+    <!-- switch dark -->
+     <div class="checkbox-wrapper-41" onclick="ubahMode()">
+  <input type="checkbox">
+</div>
+
+  </nav>
+</header>
+<section>
+  
+ 
+  <!-- Start class container -->
+     <div class="container">
+     	<!-- start class product  -->
+     	<div class="Product">
+     		<img src="image/kaospg1.png" alt="Gambar Product" width="500">
+     		<!--  <div class="side">
+    			<p>L &nbsp;i &nbsp; m&nbsp; i&nbsp; t&nbsp; e&nbsp; &nbsp;d</p>
+ 			 </div> -->
+ 			 <div class="content">
+   					 <P>Rp.200.000</P><br><br><br><br><br>
+   					 <h6>Limited</h6>
+    
+ 				 </div>
+  				
+     		<!-- start class buttonholder -->
+     		<button class="button"><h4 onclick="redirectToWhatsApp()">PESAN SEKARANG</h4></button>
+    		<!-- end class buttonholder -->
+
+     	</div>
+    	<!-- end class product  -->
+
+n
+
+    </div>
+    <!-- end class container -->
+
+</section>
+
+<footer>
+	<!-- div Row Start -->
+	<div class="row">
+		<!-- col 1 -->
+		<div class="col">
+			<h1> 2023</h1>
+			<h3>Desain</h3>
+			
+		</div>
+		<!-- col 2 -->
+		<div class="col">
+			<h1> 5 </h1>
+			<h3> Persediaan </h3>
+		</div>
+		<!-- col 3 -->
+		<div class="col">
+			<h1>Zelos Type-01</h1>
+			<h3>Nama Produk</h3>
+		</div>
+		<!-- col 3 -->
+		<div class="col">
+			<h1> Combed 30S</h1>
+			<h3>Bahan</h3>
+		</div>
+		
+	</div>
+	<!-- end div Row -->
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script> 
+	function ubahMode() {
+		// body...
+		const ubah = document.body;
+		ubah.classList.toggle("dark");
+	}
+</script>
+<script>
+	function redirectToWhatsApp() {
+  var phoneNumber = "6281234567890"; // Ganti dengan nomor telepon penerima
+  var message = "Halo, saya tertarik dengan produk Anda Zelos Type-01"; // Ganti dengan pesan yang ingin dikirim
+  
+  var encodedMessage = encodeURIComponent(message);
+  var whatsappUrl = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
+  
+  window.open(whatsappUrl);
+}
+</script>
+</body>
+</html>
